@@ -1,0 +1,224 @@
+/* * makes it affect everything*/
+* {
+    
+    font-weight:bold;
+    text-align: center;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    margin: 0;
+   
+    
+    
+}
+/* Difference between ID and class in CSS is that ID is specific to one element, while a class can be assigned to multiple elements throughout the webiste*/
+/* A single element can have 1 ID, but it can have multiple classes*/
+#myID {
+    color:#ffffff;
+    font-family:Arial, Helvetica, sans-serif;
+    
+}
+.myClass {
+    color:#032357;
+}
+
+.dropdown{
+    position:relative;
+    display:inline-block;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 14px 20px;
+    text-decoration: none;
+    display: block;
+  }
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+
+.dropdown-content a:hover {background-color: #ddd;}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: block;}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {background-color: #3e8e41;}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    background: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+
+/*
+nav {
+    background: #0d0a0a;
+    height: 55px;
+    width: 100%;
+}
+
+nav ul{
+    float: right;
+    margin-right: 20px;
+}
+
+nav ul li {
+    display: inline-block;
+    line-height: 60px;
+    margin: 0 5px;
+}
+
+nav ul li a {
+    color: white;
+    font-size: 20px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    font-family: sans-serif
+}
+
+a.active,a:hover {
+    background: #1c1a1a ;
+    transition: .5s;
+}
+*/
+.logo {
+    font-size: 32px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 700;
+    font-family: 'Long Island', sans-serif;
+}
+
+.navbar a {
+    position: relative;
+    font-size: 25px;
+    color: #fff;
+    font-weight: bold;
+    text-decoration: none;
+    margin-left: 40px;
+    font-family: 'poppins', sans-serif;
+}
+
+.navbar a::before {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: #fff;
+    transition: .3s;
+
+}
+
+.navbar a:hover::before {
+    width: 100%;
+}
+
+
+body {
+    background-color: #032357;
+}
+
+#linktext {
+    color: white;
+    position:relative; 
+    left:20px; 
+    top:130px;
+    font-family: 'bebas', sans-serif;
+    font-size: 50px;
+    font-weight: bold;
+
+}
+
+.box {
+
+    width: 450px;
+    height: 400px;
+    padding: 5px;
+    border: 5px solid gray;
+    margin: 0;
+    font-size: 30px;
+    color: white;
+    background-color: #3e8e41;
+
+    
+}
+
+.skills {
+    float: left;
+    color: white;
+    font-family: BinnerD, sans-serif;
+    
+    position: relative;
+    margin: 5px;
+}
+
+#skillstext {
+    text-decoration: underline;
+    padding: 5px;
+    
+
+}
+
+/*
+#navigation {
+    display: inline;
+    display: block;
+    padding: 10px;
+    background-color: #dddddd;
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #333
+    }
+
+    li {
+        float: left;
+    }
+
+    li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px, 16px;
+        text-decoration: none;
+    }
+
+    li a:hover{
+        background-color: #111;
+    }
+    
+}
+
+/* borders
+
+.classDash {
+    border-style:dashed;
+}
+
+.classVaried {
+    border-top-style: solid;
+    border-right-style: dotted;
+    border-bottom-style: double;
+    border-left-style: outset;
+}
+*/
